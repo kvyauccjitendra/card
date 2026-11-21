@@ -6,7 +6,7 @@ console.log(props)
           <div>
               <div className="top">
                 <img src={props.brandlogo} alt="" />
-                <button>Save <Bookmark size={10} /></button>
+                <button>Save <Bookmark size={15} /></button>
               </div>
               <div className="middle">
                 <h3>{props.company} <span>{props.posted}</span></h3>

@@ -45,6 +45,9 @@ body {
   gap: 137px;
 }
 .top button{
+    padding-top: 7px;
+    justify-content: space-around;
+    display: flex;
     margin-top: 10px;
     width: 89px;
     height: 30px;
