@@ -1,14 +1,30 @@
+import {Bookmark} from 'lucide-react'
 const Card = (props) => {
-
+console.log(props)
   return (
-    <div className="parent">
         <div className="card">
-            <img src="https://images.unsplash.com/photo-1792883606540-94f17f336952?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="" />
-            <h1>Hello, I am {props.user}, and i am  {props.age} old.</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est laboriosam expedita eligendi itaque, vitae architecto.</p>
-            <button>View Profile</button>
+          <div>
+              <div className="top">
+                <img src={props.brandlogo} alt="" />
+                <button>Save <Bookmark size={10} /></button>
+              </div>
+              <div className="middle">
+                <h3>{props.company} <span>{props.posted}</span></h3>
+                <h2>{props.post}</h2>
+                <div className="tag">
+                  <h4>{props.tag1}</h4>
+                  <h4>{props.tag2}</h4>
+                </div>
+              </div>
+              <div className="bottom">
+                <div>
+                  <h3>{props.pay}</h3>
+                  <p>{props.location}</p>
+                </div>
+                <button>Apply Now</button>
+              </div>
+          </div>
         </div>
-    </div>
   )
 }
 

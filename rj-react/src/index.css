@@ -1,42 +1,106 @@
-*{
-  box-sizing: border-box;
-  font-family: 'helvetica neue';
-  
+* {
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue';
 }
 
 body {
-  width: 100%;
-  height: 100%;
-  margin: 0;
+    margin: 0;
+    background-color: #333;
 }
 
-.parent{
-  padding: 20px;
+.parent {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.card {
+    width: 318px;
+    height: 380px;
+    color: #000000;
+    border: 1px solid #2e303a;
+    border-radius: 40px;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+}
+
+.card > div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.top{
   display: flex;
-  flex-wrap: wrap;
+  gap: 137px;
 }
-.card{
-  width: 300px;
+.top button{
+    margin-top: 10px;
+    width: 89px;
+    height: 30px;
+    border-radius: 7px;
+}
+.middle{
+  flex: 1;
+}
+.middle h3{
+    padding-top: 25px;
+    margin: 0px;
+    display: flex;
+    font-size: 26px;
+    /* gap: 10px; */
+    justify-content: space-between;
+}
+.middle h3 span{
+  display: contents;
+      padding-top: 25px;
+      margin: 0px;
+      font-size: 16px;
+    color: #494646;
+}
+
+.middle h2{
+  margin: 0px;
+  font-size: 30px;
+  text-align: left;
+}
+.tag{
+  display: flex;
+  gap: 10px;
+}
+.tag h4{
+    padding: 5px;
+    border: 1px solid grey;
+    background-color: #f6f6f6;
+    border-radius: 5px;
+}
+
+.bottom{
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 15px;
+    margin-top: 30px;
+    display: flex;
+    border-top: 1px solid grey;
+}
+
+.bottom div h3, .bottom div p{
+margin: 0px;
+}
+.bottom button{
+  background-color: #000000;
   color: #fff;
-  border: 1px solid #2e303a;
-  border-radius: 10px;
-  background-color: #333;
-  padding: 20px;
-  text-align: center;
-}
-.card img{
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 50%;
-}
-.card p{
-  margin: 20px 0;
-}
-.card button{
-  padding: 10px 20px;
-  background-color: #fff;
-  color: #000;
-  border: none;
-  border-radius: 5px;
+      padding: 10px;
+    border-radius: 8px;
 }
