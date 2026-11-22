@@ -1,4 +1,6 @@
 .contain{
+  padding: 20px;
+  /* margin: 20px; */
   display: flex;
   justify-content: space-between;
   background-color: lightskyblue;
@@ -7,8 +9,12 @@
 
 .btn{
   background-color: red;
+  font-size: 22px;
   width: fit-content;
   padding: 10px 20px;
   border-radius: 5px;
   margin: 5px;
+}
+.logo{
+  text-decoration: underline;
 }
